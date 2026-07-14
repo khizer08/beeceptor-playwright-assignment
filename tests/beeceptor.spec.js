@@ -21,7 +21,7 @@ test("Beeceptor HTTP Callout Assignment", async ({ page }) => {
   await page.waitForTimeout(5000);
 
   await page.getByRole("button", { name: "user-avatar Syed Kh..." }).click();
-  await page.waitForTimeout(8000);
+  await page.waitForTimeout(5000);
 
   await page.getByRole("link", { name: "Your Endpoints" }).click();
   await page.waitForTimeout(8000);
