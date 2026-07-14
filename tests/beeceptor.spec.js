@@ -31,7 +31,7 @@ test("Beeceptor HTTP Callout Assignment", async ({ page }) => {
     .click();
   await page.waitForTimeout(3000);
 
-  await page.locator("a").filter({ hasText: "Mock Rules (2)" }).click();
+  await page.locator("a").filter({ hasText: "Mock Rules (1)" }).click();
   await page.waitForTimeout(5000);
 
   await page.getByRole("button", { name: "Toggle Dropdown" }).click();
@@ -92,7 +92,7 @@ test("Beeceptor HTTP Callout Assignment", async ({ page }) => {
 
   await page.waitForTimeout(3000);
 
-  await page.locator("a").filter({ hasText: "Mock Rules (3)" }).click();
+  await page.locator("a").filter({ hasText: "Mock Rules (2)" }).click();
   await page.waitForTimeout(500);
 
   page.once("dialog", async (dialog) => {
