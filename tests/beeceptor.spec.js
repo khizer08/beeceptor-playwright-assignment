@@ -4,7 +4,7 @@ test("Beeceptor HTTP Callout Assignment", async ({ page }) => {
   await page.goto("https://app.beeceptor.com/login");
 
   await page.getByRole("button", { name: "Sign in with OTP" }).click();
-  await page.waitForTimeout(800);
+  await page.waitForTimeout(1500);
 
   await page.getByRole("textbox", { name: "Email address" }).click();
   await page
@@ -29,7 +29,7 @@ test("Beeceptor HTTP Callout Assignment", async ({ page }) => {
   await page
     .getByRole("link", { name: "#khizer-playwright-beeceptor" })
     .click();
-  await page.waitForTimeout(3000);
+  await page.waitForTimeout(5000);
 
   await page.locator("a").filter({ hasText: "Mock Rules (1)" }).click();
   await page.waitForTimeout(5000);
@@ -84,7 +84,7 @@ test("Beeceptor HTTP Callout Assignment", async ({ page }) => {
   );
   
   expect(response.status()).toBe(200);
-  await page.waitForTimeout(10000);
+  await page.waitForTimeout(12000);
 
   const responseBody = await response.json();
 
