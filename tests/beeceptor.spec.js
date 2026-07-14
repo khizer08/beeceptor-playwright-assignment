@@ -84,7 +84,7 @@ test("Beeceptor HTTP Callout Assignment", async ({ page }) => {
   );
   
   expect(response.status()).toBe(200);
-  await page.waitForTimeout(8000);
+  await page.waitForTimeout(10000);
 
   const responseBody = await response.json();
 
