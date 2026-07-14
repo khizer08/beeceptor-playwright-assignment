@@ -18,5 +18,5 @@ This project automates Beeceptor's HTTP Callout feature using Playwright.
 
 ## Run
 
-npm install
-npx playwright test tests/beeceptor.spec.js --headed --project=chromium
+- npm install
+- npx playwright test tests/beeceptor.spec.js --headed --project=chromium
