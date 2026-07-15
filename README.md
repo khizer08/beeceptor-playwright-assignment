@@ -16,6 +16,13 @@ This project automates Beeceptor's HTTP Callout feature using Playwright.
 - JavaScript
 - Node.js
 
+## Environment Variables
+
+Create a `.env` file in the project root with:
+
+```env
+EMAIL=your-email@example.com
+
 ## Run
 
 - npm install

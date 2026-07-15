@@ -1,4 +1,5 @@
 import { test, expect } from "@playwright/test";
+import 'dotenv/config';
 
 test("Beeceptor HTTP Callout Assignment", async ({ page }) => {
   await page.goto("https://app.beeceptor.com/login");
@@ -9,7 +10,7 @@ test("Beeceptor HTTP Callout Assignment", async ({ page }) => {
   await page.getByRole("textbox", { name: "Email address" }).click();
   await page
     .getByRole("textbox", { name: "Email address" })
-    .fill("syedkhizer1308@gmail.com");
+    .fill(process.env.EMAIL);
 
   await page.waitForTimeout(2000);
 
